@@ -2,4 +2,8 @@
     <string name="app_name">TicTacToe</string>
     <string name="tic_tac_toe">Let\'s Play Tic-Tac-Toe</string>
     <string name="maingrid">MainGrid</string>
+    <string name="todo">TODO</string>
+    <string name="todo1">TODO</string>
+    <string name="todo2">TODO</string>
+    <string name="x_s_turn_tap_to_play">X\'s Turn! Tap to Play</string>
 </resources>

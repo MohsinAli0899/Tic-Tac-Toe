@@ -12,10 +12,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="26dp"
+        android:fontFamily="monospace"
         android:text="@string/tic_tac_toe"
         android:textAlignment="center"
         android:textColor="#0B0A0A"
-        android:textSize="34sp"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintHorizontal_bias="0.461"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -32,7 +33,8 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/grid" />
+        app:srcCompat="@drawable/grid"
+        tools:ignore="ImageContrastCheck" />
 
     <LinearLayout
         android:layout_width="0dp"
@@ -58,25 +60,30 @@
                 android:contentDescription="@string/tic_tac_toe"
                 android:onClick="playertap"
                 android:padding="20sp"
-                android:tag="0" />
+                android:tag="0"
+                tools:ignore="DuplicateSpeakableTextCheck" />
 
             <ImageView
                 android:id="@+id/imageView1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:contentDescription="@string/todo"
                 android:onClick="playertap"
                 android:padding="20sp"
-                android:tag="1" />
+                android:tag="1"
+                tools:ignore="DuplicateSpeakableTextCheck" />
 
             <ImageView
                 android:id="@+id/imageView2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:contentDescription="@string/tic_tac_toe"
                 android:onClick="playertap"
                 android:padding="20sp"
-                android:tag="2" />
+                android:tag="2"
+                tools:ignore="ImageContrastCheck" />
         </LinearLayout>
 
         <LinearLayout
@@ -92,13 +99,15 @@
                 android:layout_weight="1"
                 android:onClick="playertap"
                 android:padding="20sp"
-                android:tag="3" />
+                android:tag="3"
+                android:contentDescription="@string/todo" />
 
             <ImageView
                 android:id="@+id/imageView4"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:contentDescription="@string/tic_tac_toe"
                 android:onClick="playertap"
                 android:padding="20sp"
                 android:tag="4" />
@@ -108,6 +117,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:contentDescription="@string/tic_tac_toe"
                 android:onClick="playertap"
                 android:padding="20sp"
                 android:tag="5" />
@@ -126,13 +136,15 @@
                 android:layout_weight="1"
                 android:onClick="playertap"
                 android:padding="20sp"
-                android:tag="6" />
+                android:tag="6"
+                android:contentDescription="@string/todo" />
 
             <ImageView
                 android:id="@+id/imageView7"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:contentDescription="@string/tic_tac_toe"
                 android:onClick="playertap"
                 android:padding="20sp"
                 android:tag="7" />
@@ -154,7 +166,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="15sp"
-        android:text="X's Turn! Tap to Play"
+        android:fontFamily="monospace"
+        android:text="@string/x_s_turn_tap_to_play"
         android:textColor="#0B0A0A"
         android:textSize="20sp"
         android:textStyle="bold"
