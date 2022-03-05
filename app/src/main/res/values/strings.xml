@@ -6,4 +6,6 @@
     <string name="todo1">TODO</string>
     <string name="todo2">TODO</string>
     <string name="x_s_turn_tap_to_play">X\'s Turn! Tap to Play</string>
+    <string name="button">Reset</string>
+    <string name="resetbutton">ResetButton</string>
 </resources>
