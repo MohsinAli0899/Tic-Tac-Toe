@@ -37,6 +37,7 @@
         tools:ignore="ImageContrastCheck" />
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="0dp"
         android:layout_height="350dp"
         android:orientation="vertical"
@@ -97,10 +98,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:contentDescription="@string/todo"
                 android:onClick="playertap"
                 android:padding="20sp"
-                android:tag="3"
-                android:contentDescription="@string/todo" />
+                android:tag="3" />
 
             <ImageView
                 android:id="@+id/imageView4"
@@ -134,10 +135,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:contentDescription="@string/todo"
                 android:onClick="playertap"
                 android:padding="20sp"
-                android:tag="6"
-                android:contentDescription="@string/todo" />
+                android:tag="6" />
 
             <ImageView
                 android:id="@+id/imageView7"
@@ -185,13 +186,15 @@
         android:fontFamily="monospace"
         android:onClick="gameReset"
         android:text="@string/button"
-        android:textColor="@color/white"
+        android:textColor="@color/material_dynamic_neutral50"
         android:textSize="16sp"
         android:textStyle="bold"
         app:iconTint="@color/teal_700"
         app:layout_constraintBottom_toTopOf="@+id/status"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.851" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
