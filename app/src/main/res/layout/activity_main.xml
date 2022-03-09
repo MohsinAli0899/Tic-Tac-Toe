@@ -168,6 +168,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="15sp"
         android:fontFamily="monospace"
+        android:gravity="center"
         android:text="@string/x_s_turn_tap_to_play"
         android:textColor="#0B0A0A"
         android:textSize="20sp"

@@ -35,12 +35,12 @@ public class MainActivity extends AppCompatActivity {
                 img.setImageResource(R.drawable.x);
                 activePlayer = 1;
                 TextView status = findViewById(R.id.status);
-                status.setText("O's Turn! Tap to Play");
+                status.setText("O's Turn! Tap in the desired box to play");
             } else {
                 img.setImageResource(R.drawable.o);
                 activePlayer = 0;
                 TextView status = findViewById(R.id.status);
-                status.setText("X's Turn! Tap to Play");
+                status.setText("X's Turn! Tap in the desired box to play");
             }
             img.animate().translationYBy(1000f).setDuration(300);
         }
